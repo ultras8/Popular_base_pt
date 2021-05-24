@@ -1,0 +1,17 @@
+n1 = 0
+n2 = 0
+s2 = 0
+lst1 = []
+while(n1 != -1):
+    n1 = int(input())
+    if n1 != -1:
+        n2 += 1
+        lst1.append(n1)
+s1 = lst1.count(lst1[0])
+for i in range(n2):
+    if s1 < lst1.count(lst1[i]) :
+        s1 = lst1.count(lst1[i])
+        s2 = lst1[i]
+if lst1.count(s2)> n2 / 2:
+    print(s2)
+else: print('Not found')
