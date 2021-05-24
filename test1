@@ -1,0 +1,11 @@
+import statistics as stats
+n1 = 0
+lst1 = []
+s = []
+while(n1 != -1):
+    n1 = int(input())
+    if n1 != -1:
+        lst1.append(n1)
+for i in lst1:
+    mode = stats.mode(lst1)
+print(f'mode : {mode}')
